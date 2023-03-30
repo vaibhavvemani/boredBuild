@@ -2,7 +2,7 @@ const btnEl = document.querySelector('.btn');
 
 
 function getTask(){
-  fetch("http://www.boredapi.com/api/activity/")
+  fetch("https://www.boredapi.com/api/activity/")
     .then((response) => {
       if(response.ok){
         return response.json()
