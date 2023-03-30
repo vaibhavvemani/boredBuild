@@ -1,3 +1,5 @@
+const btnEl = document.querySelector('.btn');
+
 
 function getTask(){
   fetch("http://www.boredapi.com/api/activity/")
@@ -13,6 +15,9 @@ function getTask(){
     })
     .catch(error => console.error("Fetch error: ", error));
 }
+
+
+btnEl.addEventListener('click', getTask);
 
 
 
