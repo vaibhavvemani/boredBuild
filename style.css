@@ -62,13 +62,17 @@ button {
   
 }
 
-button:hover {
-  background-color: #242424;
-  box-shadow: 0 8px 16px 0 rgba(244, 0, 0, 0.2);
+@media (hover:hover){
+  button:hover {
+    background-color: #242424;
+    box-shadow: 0 8px 16px 0 rgba(244, 0, 0, 0.2);
+    transition-duration: 50ms;
+  }
 }
+
 
 button:active {
   background-color: #222222;
-  
   transform: translateY(4px);
 }
+
